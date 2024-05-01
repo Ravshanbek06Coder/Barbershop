@@ -163,6 +163,9 @@ header .nav_link li {
   font-weight: 500;
   line-height: 24px;
 }
+header .media_link {
+  display: none;
+}
 header .header_right {
   display: flex;
   flex-direction: column;
@@ -321,6 +324,7 @@ header .header_right a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 #percentile .main_container .percentile_item {
@@ -424,4 +428,252 @@ header .header_right a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#accounts {
+  margin: 120px 0;
+}
+#accounts .main_container {
+  padding: 0 12px;
+}
+#accounts .account_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 64px;
+}
+#accounts .account_title span {
+  color: rgb(0, 211, 226);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+}
+#accounts .account_title h4 {
+  color: rgb(0, 0, 0);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+  padding: 24px 0;
+}
+#accounts .account_title p {
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 720px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+}
+#accounts .account_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#accounts .account_wrapper .account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#accounts .account_wrapper .account h6 {
+  color: rgb(0, 0, 0);
+  padding-top: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+}
+#accounts .account_wrapper .account p {
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#forms {
+  background-image: url(./images/form.png);
+  background-size: cover;
+  padding: 100px 0;
+}
+#forms form {
+  display: flex;
+  justify-content: center;
+}
+#forms .main_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+}
+#forms .form_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+#forms .form_title h5 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+}
+#forms .form_title span {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 540px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#forms .form_inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 24px;
+}
+#forms .form_inputs input {
+  box-sizing: border-box;
+  width: 540px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  padding: 16px 20px;
+}
+#forms .form_inputs input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#forms .form_inputs input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#forms .form_choose {
+  max-width: 540px;
+}
+#forms .form_choose p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#forms .choose_inputs {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+}
+#forms .choose_inputs .choose_item label {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#forms .choose_inputs .choose_item input {
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  background: rgb(0, 211, 226);
+  padding: 8px;
+}
+#forms .form_btn {
+  padding-top: 48px;
+}
+#forms .form_btn button {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 6px;
+  background: rgb(0, 211, 226);
+  padding: 16px 198px;
+}
+#forms .form_btn p {
+  color: rgba(0, 0, 0, 0.4);
+  max-width: 540px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 24px;
+}
+
+#maps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(0, 211, 226);
+}
+#maps .map_text {
+  background: rgb(0, 211, 226);
+  display: flex;
+  justify-content: center;
+  padding: 121px 0;
+  width: 50%;
+}
+#maps .map_mail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 17px;
+}
+#maps .map_mail h6 {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 110%;
+  padding-bottom: 17px;
+}
+#maps .map_mail li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+footer {
+  margin: 80px 0;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .icons img {
+  padding: 16px;
+  background: rgb(0, 211, 226);
+  border-radius: 50%;
+}
+footer .footer_link {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+footer .footer_link .footer_item {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer span {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  header .nav_link {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

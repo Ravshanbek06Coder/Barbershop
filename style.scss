@@ -207,7 +207,9 @@ address {
                     line-height: 24px;
                 }
             }
-
+            .media_link{
+                display: none;
+            }
             .header_right{
                     display: flex;
                     flex-direction: column;
@@ -388,6 +390,7 @@ address {
 
         .main_container{
                     @include flex-full-center();
+                    flex-wrap: wrap;
                     gap: 30px;
 
                 .percentile_item{
@@ -520,3 +523,249 @@ address {
 
         }
     // slider
+
+    // account
+         #accounts{
+            margin: 120px 0;
+            .main_container{
+                padding: 0 12px;
+            }
+            .account_title{
+                    @include flex-full-center();
+                    flex-direction: column;
+                    padding-bottom: 64px;
+                span{
+                    color: rgb(0, 211, 226);
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+                h4{
+                    color: rgb(0, 0, 0);
+                    font-size: 64px;
+                    font-weight: 700;
+                    line-height: 68px;
+                    padding: 24px 0;
+                }
+                p{
+                    color: rgba(0, 0, 0, 0.7);
+                    max-width: 720px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 130%;
+                    text-align: center;
+                }
+            }
+           .account_wrapper{
+                 @include flex-between();
+                 flex-wrap: wrap;
+                .account{
+                    @include flex-full-center();
+                    flex-direction: column;
+                h6{
+                    color: rgb(0, 0, 0);
+                    padding-top: 24px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+                p{
+                    color: rgba(0, 0, 0, 0.7);
+                    padding-top: 8px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+           }
+         }
+    // account
+
+    // forms
+         #forms{
+                    background-image: url(./images/form.png);
+                    background-size: cover;
+                    padding: 100px 0;
+                    form{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .main_container{
+                        @include flex-center();
+                        flex-direction: column;
+                        align-items: start;
+                    }
+                    .form_title{
+                            @include flex-full-center();
+                            flex-direction: column;
+                            gap: 16px;
+                            padding-bottom: 40px;
+                        h5{
+                            color: rgb(255, 255, 255);
+                            font-size: 48px;
+                            font-weight: 700;
+                            line-height: 52px;
+                        }
+                        span{
+                            color: rgba(255, 255, 255, 0.8);
+                            max-width: 540px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+                    .form_inputs{
+                                @include flex-center();
+                                flex-direction: column;
+                                gap: 8px;
+                                padding-bottom: 24px;
+                        input{
+                                box-sizing: border-box;
+                                width: 540px;
+                                border: 1px solid rgba(0, 0, 0, 0.1);
+                                border-radius: 6px;
+                                background: rgb(255, 255, 255);
+                                padding: 16px 20px;
+                            &::placeholder{
+                                color: rgba(0, 0, 0, 0.2);
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                    .form_choose{
+                            max-width: 540px;
+                        p{
+                            color: rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+                    .choose_inputs{
+                            display: flex;
+                            justify-content: start;
+                            flex-direction: column;
+                            gap: 16px;
+                            padding-top: 16px;
+                    .choose_item{
+                        label{
+                            color: rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                        input{
+                            border-radius: 8px;
+                            background: rgb(255, 255, 255);
+                            border-radius: 12px;
+                            background: rgb(0, 211, 226);
+                            padding: 8px;
+                        }
+                    }
+                    }
+                    .form_btn{
+                            padding-top: 48px;
+                        button{
+                            color: rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            border-radius: 6px;
+                            background: rgb(0, 211, 226);
+                            padding: 16px 198px;
+                        }
+                        p{
+                            color: rgba(0, 0, 0, 0.4);
+                            max-width: 540px;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            text-align: center;
+                            padding-top: 24px;
+                        }
+                    }
+         }
+    // forms
+
+    // map
+        #maps{
+            @include flex-center();
+            justify-content: space-between;
+            background: rgb(0, 211, 226);
+            .map_text{
+                    background: rgb(0, 211, 226);
+                    display: flex;
+                    justify-content: center;
+                    padding: 121px 0;
+                    width: 50%;
+            }
+            .map_mail{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    padding-top: 17px;
+                    h6{
+                        color: rgb(255, 255, 255);
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 110%;
+                        padding-bottom: 17px;
+                }
+                li{
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+        }
+    // map
+
+    // footer
+    footer{
+        margin: 80px 0;
+        .icons{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            img{
+                padding: 16px;
+                background: rgb(0, 211, 226);
+                border-radius: 50%;
+            }
+        }
+        .footer_link{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 0;
+            .footer_item{
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+    // footer
+
+    // media
+    @media only screen and (max-width:750px){
+        header{
+            .nav_link{
+                display: none;
+            }
+        }
+    }
+      // media
