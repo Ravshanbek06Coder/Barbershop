@@ -207,8 +207,12 @@ address {
                     line-height: 24px;
                 }
             }
-            .media_link{
+            .menu{
                 display: none;
+                .media_link{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
             .header_right{
                     display: flex;
@@ -763,9 +767,40 @@ address {
     // media
     @media only screen and (max-width:750px){
         header{
+            .main_container{
+                padding: 0 25px;
+            }
             .nav_link{
                 display: none;
             }
+            .menu{
+                display: block;
+                overflow: hidden;
+                height: 45px;
+                transition: .3s ease;
+                &:hover{
+                    height: 100%;
+                }
+                img{
+                    width: 80px;
+                    margin-left: 50px;
+                }
+                .media_link{
+                    margin: 0;
+                }
+            }
         }
+    
+
+        #cards{
+            .card_title{
+                padding: 0 25px;
+                padding-bottom: 30px;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
     }
       // media

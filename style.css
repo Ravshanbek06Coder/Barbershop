@@ -163,8 +163,12 @@ header .nav_link li {
   font-weight: 500;
   line-height: 24px;
 }
-header .media_link {
+header .menu {
   display: none;
+}
+header .menu .media_link {
+  display: flex;
+  flex-direction: column;
 }
 header .header_right {
   display: flex;
@@ -673,7 +677,33 @@ footer span {
 }
 
 @media only screen and (max-width: 750px) {
+  header .main_container {
+    padding: 0 25px;
+  }
   header .nav_link {
     display: none;
+  }
+  header .menu {
+    display: block;
+    overflow: hidden;
+    height: 45px;
+    transition: 0.3s ease;
+  }
+  header .menu:hover {
+    height: 100%;
+  }
+  header .menu img {
+    width: 80px;
+    margin-left: 50px;
+  }
+  header .menu .media_link {
+    margin: 0;
+  }
+  #cards .card_title {
+    padding: 0 25px;
+    padding-bottom: 30px;
+  }
+  #cards .card_title p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
